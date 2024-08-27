@@ -1,0 +1,147 @@
+:root{
+    --color-White: hsl(0, 0%, 100%);
+
+    --color-Stone-100: hsl(30, 54%, 90%);
+    --color-Stone-150: hsl(30, 18%, 87%);
+    --color-Stone-600: hsl(30, 10%, 34%);
+    --color-Stone-900: hsl(24, 5%, 18%);
+
+    --color-Brown-800: hsl(14, 45%, 36%);
+
+    --color-Rose-800: hsl(332, 51%, 32%);
+    --color-Rose-50: hsl(330, 100%, 98%)
+}
+
+@font-face {
+    font-family: 'Young serif';
+    src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: var(--color-Stone-100);
+    font-size: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 120px auto;
+    max-width: 500px;
+    background-color: var(--color-White);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+hr {
+    border-color: var(--color-Stone-150);
+    margin: 33px 0;
+}
+
+#recipe-img {
+    border-radius: 20px;
+}
+
+h1 {
+    color: var(--color-Stone-900);
+    margin: 40px 0 28px 0;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+    h1, h2 {
+        font-family: 'Young serif', serif;
+    }
+
+    h2 {
+        color: var(--color-Brown-800);
+        font-size: 1.75rem;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+
+.preparationtime {
+    background-color: var(--color-Rose-50);
+    margin: 35px 0;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+    .preparationtime h2 {
+        font-weight: 600;
+    }
+
+    #preparationtime-title {
+        font-family: 'Outfit', sans-serif;
+        color: var(--color-Rose-800);
+        margin-bottom: 22px;
+    } 
+
+.nutrition-description {
+    margin-bottom: 32px;
+}
+    
+ul {
+    padding-left: 8px;
+    color: var(--color-Stone-900);
+ }
+
+    li {
+        padding: 0 20px;
+        margin: 0 15px;
+        line-height: 1.5rem;
+    }
+
+    li::marker {
+        color: var(--color-Brown-800);
+    }
+
+    .preparationtime li::marker {
+        color: var(--color-Rose-800);
+    }
+
+    ul li {
+        list-style-type: square;
+        margin-bottom: 15px;
+    }
+
+    ul li:last-child {
+        margin-bottom: 0px;
+    }
+    
+ol {
+    padding-left: 0px;
+    }
+
+    li {
+        margin-bottom: 15px;
+        margin: 0 0 15px 25px;
+    }
+
+    ol li:last-child {
+        margin-bottom: 0px;
+    }
+
+.name {
+    padding-left: 40px;
+}
+
+    .value {
+        font-weight: 600;
+        color: var(--color-Brown-800);
+        padding-right: 30px;
+    }
+
+    .line-break {
+        border-bottom: 1px solid var(--color-Stone-150);
+    }
+    
+    td {
+        height: 40px;
+    }
